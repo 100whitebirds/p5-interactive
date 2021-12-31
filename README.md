@@ -1,1 +1,1 @@
-Some P5.js demos with controls purely on aesthetical purpose
+Some P5.js canvas with controls purely on aesthetic purpose
