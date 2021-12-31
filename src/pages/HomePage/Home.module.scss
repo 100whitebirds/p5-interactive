@@ -1,0 +1,37 @@
+.container {
+    animation: fadeout;
+    animation-duration: 0.5s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+    0% {opacity: 1}
+    100%{opacity: 0}
+}
+
+.typedOut{
+  padding-left: 100px;
+  padding-top: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(100, end) forwards;
+  animation-delay: 1s;
+  font-size: 1.8rem;
+  width: 0;
+  a { 
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.typedOutLatter {
+  @extend .typedOut;
+  animation-delay: 3s;
+  overflow: scroll-Y;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
