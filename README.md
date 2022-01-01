@@ -2,7 +2,7 @@
 
 Some P5.js canvas with controls purely on aesthetic purpose
 
-You can see demo there: https://p5-interactive.vercel.app/hello
+Demo: https://p5-interactive.vercel.app/hello
 
 <h2> To run locally: </h2>
 
