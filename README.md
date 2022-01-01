@@ -1,4 +1,4 @@
-'#' P5-Interactive
+<h1> P5-Interactive </h1>
 
 Some P5.js canvas with controls purely on aesthetic purpose
 
