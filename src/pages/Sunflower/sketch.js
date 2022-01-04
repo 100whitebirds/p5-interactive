@@ -8,7 +8,7 @@ const sketch = (p) => {
   p.setup = () => {
     const size = p.min(window.innerWidth, window.innerHeight)
     p.createCanvas(size, size);
-    // canvas = p.createCanvas(p.windowHeight, p.windowHeight, p.WEBGL)
+    // canvas = p.createCanvas(p.windowHeight + (p.windowHeight / 3), p.windowHeight)
     p.noStroke()
     p.colorMode(p.HSL, 1)
   }
@@ -41,7 +41,7 @@ const sketch = (p) => {
   let t
   
   p.draw = () => {
-    p.scale(p.width, p.height)
+    p.scale(p.height, p.height)
     // t = p.mouseX / p.width; 
     t = p.fract(p.frameCount / frames)
     p.background(0)

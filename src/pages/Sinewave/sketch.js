@@ -6,7 +6,9 @@ const sketch = (p) => {
   let yRectRad = 600
 
   p.setup = () => {
-    canvas = p.createCanvas(p.windowHeight, p.windowHeight, p.WEBGL)
+    const size = p.min(window.innerWidth, window.innerHeight)
+    p.createCanvas(size, size, p.WEBGL)
+    // canvas = p.createCanvas(p.windowHeight + (p.windowHeight / 3), p.windowHeight, p.WEBGL)
     p.angleMode(p.DEGREES)
     p.rectMode(p.CENTER)
   }

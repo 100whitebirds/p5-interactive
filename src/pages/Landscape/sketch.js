@@ -7,7 +7,9 @@ const sketch = (p) => {
   let elevation = 100
 
   p.setup = () => {
-    canvas = p.createCanvas(p.windowHeight, p.windowHeight, p.WEBGL)
+    const size = p.min(window.innerWidth, window.innerHeight)
+    p.createCanvas(size, size, p.WEBGL)
+    // canvas = p.createCanvas(p.windowHeight + (p.windowHeight / 3), p.windowHeight, p.WEBGL)
     p.angleMode(p.DEGREES)
     p.noiseDetail(1)
   }
@@ -45,9 +47,9 @@ const sketch = (p) => {
     let start = (statica === 1000 ? 0 : p.frameCount / statica)
 
     let xoff = 0
-    for (let x = -p.width / 2; x <= p.width / 2; x += w) {
+    for (let x = -685 / 2; x <= 685 / 2; x += w) {
       let yoff = 0
-      for (let y = -p.height / 2; y <= p.height / 2; y += w) {
+      for (let y = -685 / 2; y <= 685 / 2; y += w) {
         let h = p.map(p.noise(xoff + start, yoff + start), 0, 1, -elevation, elevation)
         p.push()
         p.translate(x * spaceBetween, y * spaceBetween, -h / 2)
