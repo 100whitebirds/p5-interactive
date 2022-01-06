@@ -36,7 +36,9 @@ const sketch = (p) => {
     
     for (let i = 0; i < linesCount; i++) {
       p.push()
-      p.rotate(p.sin(p.frameCount + i) * rotationLevel)
+      p.rotateZ(p.sin(p.frameCount + i) * rotationLevel)
+      // p.rotateX(p.map(p.cos(p.frameCount / 10), -1, 1, 30, -30))
+      // p.rotateY(p.map(p.tan(p.frameCount / 4), -1, 1, -30, 30))
 
       let r = p.map(p.sin(p.frameCount), -1, 1, 50, 255)
       let g = p.map(p.cos(p.frameCount / 2), -1, 1, 50, 255)
@@ -45,6 +47,17 @@ const sketch = (p) => {
       p.stroke(r, g, b)
 
       p.rect(0, 0, xRectRad - i * 3, yRectRad - i * 3, 150 - i)
+
+      p.pop()
+
+      p.push()
+      p.rotateZ(p.tan(p.frameCount + i) * rotationLevel)
+      p.rotateX(p.map(p.cos(p.frameCount / 4), -1, 1, 30, -30))
+      p.rotateY(p.map(p.sin(p.frameCount / 4), -1, 1, -30, 30))
+
+      p.stroke(b, g, r)
+
+      p.rect(0, 0, yRectRad/10 - i * 3, xRectRad/10 - i * 3, 15 - i)
 
       p.pop()
     }

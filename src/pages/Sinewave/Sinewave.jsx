@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { ReactP5Wrapper } from 'react-p5-wrapper'
 import sketch from './sketch'
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Navbar/Navbar'
 import { Slider, Typography } from '@mui/material'
 import s from '../../styles/SketchPage.module.scss'
+import { NavInfoIcon } from '../../components/NavInfoIcon/NavInfoIcon'
 
 const Sinewave = () => {
   const [xRectRad, setXRectRad] = useState(600)
@@ -86,7 +87,10 @@ const Sinewave = () => {
           />
         </div>
       </div>
-      <Navbar />
+      <div className={s.navbar}>
+        <Navbar />
+      </div>
+      <NavInfoIcon />
     </div>
   )
 }

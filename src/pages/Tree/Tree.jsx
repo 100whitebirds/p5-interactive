@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ReactP5Wrapper } from 'react-p5-wrapper'
 import sketch from './sketch'
-import Navbar from '../../components/Navbar'
+import Navbar from '../../components/Navbar/Navbar'
 import Slider from '@mui/material/Slider'
 import s from '../../styles/SketchPage.module.scss'
 
@@ -45,7 +45,9 @@ const Tree = () => {
           />
         </div>
       </div>
-      <Navbar />
+      <div className={s.navbar}>
+        <Navbar />
+      </div>
     </div>
   )
 }

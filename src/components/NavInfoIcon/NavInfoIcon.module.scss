@@ -1,0 +1,9 @@
+.info {
+  color: deeppink;
+  position: absolute;
+  right: 1vw;
+  bottom: 1vw;
+  &:hover {
+    cursor: pointer;
+  } 
+}

@@ -5,6 +5,7 @@ import Sinewave from './pages/Sinewave/Sinewave'
 import Landscape from './pages/Landscape/Landscape'
 import Sunflower from './pages/Sunflower/Sunflower'
 import Home from './pages/HomePage/Home'
+import Info from './pages/InfoPage/Info'
 
 const App = () => {
   return (
@@ -13,9 +14,10 @@ const App = () => {
         <Switch>
           <Route exact path="/" render={() => <Redirect to="hello"/>} />
           <Route path="/hello" render={() => <Home/>} />
+          <Route path="/info" render={() => <Info/>} />
           <Route path="/sinewave" render={() => <Sinewave />} />
           <Route path="/landscape" render={() => <Landscape />} />
-          <Route path="/sunflower" render={() => <Sunflower/>} />
+          <Route path="/sunflower" render={() => <Sunflower />} />
         </Switch>
       </BrowserRouter>
     </div>

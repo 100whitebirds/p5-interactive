@@ -1,0 +1,13 @@
+.girlishBox {
+  margin-left: 2000px;
+  color: white;
+  font-size:8px; 
+  animation: slidein; 
+  animation-duration: 0.5s; 
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  @keyframes slidein {
+    0% {margin-left: 2000px}
+    100%{margin-left: 0px}
+  }    
+}

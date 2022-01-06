@@ -1,3 +1,7 @@
+.snowflakes {
+  position: relative;
+}
+
 .container {
   position: absolute;
   top: 0;
@@ -5,22 +9,21 @@
   right: 0; 
   bottom: 0;
   margin: auto;
-  animation: fadeout; 
-  animation-duration: 7s; 
+  animation: fadein; 
+  animation-duration: 0.5s; 
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
   height: 600px;
   max-height: 800px;
   border-radius: 30px;
-  opacity: 0.98;
+  opacity: 0;
   background-color: deeppink;
 
-  @keyframes fadeout {
+  @keyframes fadein {
     0% {opacity: 0}
-    7% {opacity: 0.98}
-    90% {opacity: 0.98}
-    100%{opacity: 0}
+    100%{opacity: 0.98}
   } 
-
+  
   .nameTag {
     text-decoration: none;
     color: white;
@@ -51,18 +54,19 @@
   }
 
   .textBox {
-    background-color: deeppink;
     border: 1px solid white;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0px 0px 5px 1px white;
     position: absolute;
     left: 0;
     right: 0;
     margin: 10px;
+    bottom: 58px;
     justify-items: center;
     align-items: center;
+    background-color: deeppink;
 
-    .typedOutFirst{
+    .typedOut{
       padding-left: 50px;
       padding-top: 20px;
       overflow: hidden;
@@ -77,14 +81,10 @@
       }
     }
 
-    .typedOutSecond {
-      @extend .typedOutFirst;
-      animation-delay: 2.5s;
-    }
-    .typedOutThird {
-      @extend .typedOutFirst;
+    .typedOutLatter {
+      @extend .typedOut;
       padding-bottom: 20px;
-      animation-delay: 4.5s;
+      animation-delay: 3.5s;
     }
 
     @keyframes typing {
@@ -92,4 +92,21 @@
       to { width: 100% }
     }
   }
+
+  .button {
+    box-shadow: 0px 0px 3px 1px white;
+    opacity: 0.7;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 0.7em;
+    position: absolute;
+    left: 1;
+    right: 11px;
+    bottom: 22px;
+  }
 }
+
+
+
+
