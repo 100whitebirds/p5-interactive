@@ -28,7 +28,7 @@ const Info = () => {
             Source code for sketches: <a target="_blank" href="https://github.com/RAILRAIL/p5-interactive">github</a> 
           </div>
         </Box>
-        <Button className={s.button} onClick={() => history.push('sunflower')}>Back to demos</Button>
+        <Button className={s.button} onClick={() => history.push('sinewave')}>Back to demos</Button>
       </Container>
     </>
   )
