@@ -6,12 +6,13 @@
   bottom: 0;
   margin: auto;
   animation: fadeout; 
-  animation-duration: 7s; 
+  animation-duration: 8s; 
+  animation-delay: 0.5s; 
   animation-fill-mode: forwards;
   height: 600px;
   max-height: 800px;
   border-radius: 30px;
-  opacity: 0.98;
+  opacity: 0;
   background-color: deeppink;
 
   @keyframes fadeout {
@@ -68,7 +69,7 @@
       overflow: hidden;
       white-space: nowrap;
       animation: typing 2s steps(100, end) forwards;
-      animation-delay: 1.5s;
+      animation-delay: 2s;
       font-size: 1.8rem;
       width: 0;
       a { 
@@ -79,12 +80,12 @@
 
     .typedOutSecond {
       @extend .typedOutFirst;
-      animation-delay: 2.5s;
+      animation-delay: 3s;
     }
     .typedOutThird {
       @extend .typedOutFirst;
       padding-bottom: 20px;
-      animation-delay: 4.5s;
+      animation-delay: 5.5s;
     }
 
     @keyframes typing {

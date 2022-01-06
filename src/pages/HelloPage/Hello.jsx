@@ -10,7 +10,7 @@ import { BunnyGirl } from '../../components/BunnyGirl/BunnyGirl'
 const Hello = () => {
   const history = useHistory()
   useEffect(() => {
-    setTimeout(() => history.push('/landscape'), 7500)
+    setTimeout(() => history.push('/landscape'), 9000)
   }, [])
 
   return (
