@@ -1,8 +1,14 @@
 .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: deeppink;
   position: absolute;
-  right: 1vw;
-  bottom: 1vw;
+  right: 10px;
+  bottom: 10px;
+  box-shadow: 0px 0px 5px 1px deeppink;
+  background-color: white;
+  border-radius: 30px;
   &:hover {
     cursor: pointer;
   } 

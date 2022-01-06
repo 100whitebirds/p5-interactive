@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router'
 import { ReactP5Wrapper } from 'react-p5-wrapper'
-import snowflakes from '../HomePage/snowflakes'
+import snowflakes from '../HelloPage/snowflakes'
 import { Button, Container } from '@mui/material'
 import { Box } from '@mui/system'
 import s from './Info.module.scss'

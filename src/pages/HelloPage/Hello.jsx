@@ -4,10 +4,10 @@ import { ReactP5Wrapper } from 'react-p5-wrapper'
 import snowflakes from './snowflakes'
 import { Container } from '@mui/material'
 import { Box } from '@mui/system'
-import s from './Home.module.scss'
+import s from './Hello.module.scss'
 import { BunnyGirl } from '../../components/BunnyGirl/BunnyGirl'
 
-const Home = () => {
+const Hello = () => {
   const history = useHistory()
   useEffect(() => {
     setTimeout(() => history.push('/landscape'), 7500)
@@ -42,4 +42,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Hello

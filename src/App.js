@@ -4,7 +4,7 @@ import './App.css'
 import Sinewave from './pages/Sinewave/Sinewave'
 import Landscape from './pages/Landscape/Landscape'
 import Sunflower from './pages/Sunflower/Sunflower'
-import Home from './pages/HomePage/Home'
+import Hello from './pages/HelloPage/Hello'
 import Info from './pages/InfoPage/Info'
 
 const App = () => {
@@ -13,8 +13,8 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" render={() => <Redirect to="hello"/>} />
-          <Route path="/hello" render={() => <Home/>} />
-          <Route path="/info" render={() => <Info/>} />
+          <Route path="/hello" render={() => <Hello />} />
+          <Route path="/info" render={() => <Info />} />
           <Route path="/sinewave" render={() => <Sinewave />} />
           <Route path="/landscape" render={() => <Landscape />} />
           <Route path="/sunflower" render={() => <Sunflower />} />
