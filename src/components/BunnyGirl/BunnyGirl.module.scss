@@ -8,6 +8,9 @@
   animation-fill-mode: forwards;
   @keyframes slidein {
     0% {margin-left: 2000px}
+    70% {margin-left: -50px}
+    90% {margin-left: 20px}
+    98% {margin-left: -10px}
     100%{margin-left: 0px}
   }    
 }

@@ -10,7 +10,7 @@ const Landscape = () => {
   const [cellSize, setCellSize] = useState(15)
   const [offset, setOffset] = useState(0.1)
   const [statica, setStatica] = useState(300)
-  const [spaceBetween, setSpaceBetween] = useState(1.3)
+  const [spaceBetween, setSpaceBetween] = useState(1)
   const [elevation, setElevation] = useState(260)
 
   return (

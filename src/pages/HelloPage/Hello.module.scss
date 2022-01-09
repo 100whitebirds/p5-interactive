@@ -14,11 +14,13 @@
   border-radius: 30px;
   opacity: 0;
   background-color: deeppink;
+  box-shadow: 0px 0px 5px 5px deeppink;
+ 
 
   @keyframes fadeout {
     0% {opacity: 0}
-    7% {opacity: 0.98}
-    90% {opacity: 0.98}
+    7% {opacity: 0.95}
+    90% {opacity: 0.95}
     100%{opacity: 0}
   } 
 
