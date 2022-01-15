@@ -38,5 +38,6 @@
 }
 
 body {
-  background-color: rgb(10, 20, 30)
+  background-color: rgb(10, 20, 30);
+  overflow: hidden;
 }
